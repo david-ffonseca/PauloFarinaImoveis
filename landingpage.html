@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paulo Farina Imóveis | Seu Novo Lar</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --azul-marinho: #0B1F33;
+      --branco: #F5F7FA;
+      --dourado: #C9A24D;
+      --cinza: #2E2E2E;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--branco);
+      color: var(--cinza);
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(11,31,51,0.88), rgba(11,31,51,0.88)), url('cidade.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 80px;
+    }
+
+    .navbar img {
+      height: 60px;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 0 80px;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero-content h1 {
+      font-size: 52px;
+      line-height: 1.15;
+      margin-bottom: 25px;
+    }
+
+    .hero-content h1 span {
+      color: var(--dourado);
+    }
+
+    .hero-content p {
+      font-size: 20px;
+      margin-bottom: 40px;
+      opacity: 0.95;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 36px;
+      background-color: var(--dourado);
+      color: var(--azul-marinho);
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #b8923f;
+    }
+
+    section {
+      padding: 90px 80px;
+    }
+
+    .galeria {
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    .galeria-header h2 {
+      font-size: 38px;
+      color: var(--azul-marinho);
+      margin-bottom: 15px;
+    }
+
+    .galeria-header h2 span {
+      color: var(--dourado);
+    }
+
+    .galeria-header p {
+      font-size: 18px;
+      margin-bottom: 50px;
+      color: var(--cinza);
+    }
+
+    .galeria-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    .galeria-grid img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .galeria-grid img:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+    }
+
+    .manifesto {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .manifesto h2 {
+      font-size: 40px;
+      color: var(--azul-marinho);
+      margin-bottom: 25px;
+    }
+
+    .manifesto h2 span {
+      color: var(--dourado);
+    }
+
+    .manifesto p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .manifesto img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .cta {
+      background-color: var(--azul-marinho);
+      color: white;
+      text-align: center;
+      padding: 90px 40px;
+    }
+
+    .cta h3 {
+      font-size: 42px;
+      margin-bottom: 25px;
+    }
+
+    .cta h3 span {
+      color: var(--dourado);
+    }
+
+    .cta p {
+      font-size: 20px;
+      margin-bottom: 40px;
+      opacity: 0.95;
+    }
+
+    footer {
+      background-color: #081726;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+    }
+
+    footer span {
+      color: var(--dourado);
+    }
+
+    @media (max-width: 900px) {
+      .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .navbar, .hero, section {
+        padding: 30px;
+      }
+
+      .hero-content h1 {
+        font-size: 38px;
+      }
+
+      .manifesto {
+        grid-template-columns: 1fr;
+      }
+
+      .cta h3 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <img src="paulo farina.webp" alt="Paulo Farina Imóveis">
+  </nav>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Paulo Farina Imóveis<br><span>não é só uma imobiliária</span></h1>
+      <p>
+        É a possibilidade real do encontro entre você e o seu novo lar.
+        Um espaço onde histórias começam, famílias crescem e sonhos ganham endereço.
+      </p>
+      <a href="#" class="btn">Encontrar meu lar</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="manifesto">
+    <div>
+      <h2>Mais do que imóveis.<br><span>Conexões humanas.</span></h2>
+      <p>
+        A Paulo Farina Imóveis nasce da crença de que escolher um imóvel vai muito além de metragem,
+        localização ou valor. Trata-se de encontrar um lugar que combine com sua história, seu momento
+        de vida e seus planos para o futuro.
+        <br><br>
+        Aqui, cada atendimento é personalizado, cada detalhe importa e cada negociação é conduzida
+        com transparência, segurança e respeito.
+      </p>
+    </div>
+
+    <img src="../assets/farina.jpg" alt="Paulo Farina Imóveis">
+  </div>
+</section>
+
+<section class="galeria">
+  <div class="galeria-header">
+    <h2>Onde histórias <span>começam</span></h2>
+    <p>Ambientes pensados para viver momentos que importam.</p>
+  </div>
+
+  <div class="galeria-grid" style="text-align: center;">
+    <img src="../assets/ambiente1.png" alt="Sala de estar moderna">
+    <img src="../assets/ambiente2.png" alt="Cozinha planejada">
+    <img src="../assets/ambiente3.png" alt="Quarto aconchegante">
+    <img src="../assets/ambiente4.png" alt="Fachada residencial">
+    <br>
+    <p>*Imagens meramente ilustrativas</p>
+  </div>
+</section>
+
+<section class="cta">
+  <h3>Seu novo lar<br><span>começa aqui</span></h3>
+  <p>
+    Dê o próximo passo com quem entende que imóvel não é produto.
+    É destino.
+  </p>
+  <a href="#" class="btn">Falar com um especialista</a>
+</section>
+
+<footer>
+  <p>© 2026 <span>Paulo Farina Imóveis</span> • Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

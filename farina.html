@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paulo Farina Imóveis</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --azul-marinho: #0B1F33;
+      --branco: #F5F7FA;
+      --dourado: #C9A24D;
+      --cinza: #2E2E2E;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--branco);
+      color: var(--cinza);
+    }
+
+    header {
+      background: linear-gradient(rgba(11,31,51,0.85), rgba(11,31,51,0.85)), url('../assets/cidade.jpg') center/cover no-repeat;
+      height: 100vh;
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 80px;
+    }
+
+    .navbar img {
+      height: 60px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: var(--dourado);
+    }
+
+    .hero {
+      height: calc(100vh - 120px);
+      display: flex;
+      align-items: center;
+      padding: 0 80px;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero-content h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .hero-content span {
+      color: var(--dourado);
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background-color: var(--dourado);
+      color: var(--azul-marinho);
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #b8923f;
+    }
+
+    section {
+      padding: 80px;
+    }
+
+    .sobre {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .sobre img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .sobre h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: var(--azul-marinho);
+    }
+
+    .sobre p {
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    footer {
+      background-color: var(--azul-marinho);
+      color: white;
+      padding: 40px 80px;
+      text-align: center;
+    }
+
+    footer span {
+      color: var(--dourado);
+    }
+
+    @media (max-width: 900px) {
+      .navbar, .hero, section {
+        padding: 30px;
+      }
+
+      .hero-content h1 {
+        font-size: 36px;
+      }
+
+      .sobre {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <img src="../assets/paulo farina.webp" alt="Paulo Farina Imóveis">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Imóveis</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Seu próximo imóvel começa com <span>confiança</span></h1>
+        <p>Especialistas em conectar pessoas aos melhores imóveis com transparência, segurança e alto padrão.</p>
+        <a href="#" class="btn">Ver Imóveis</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sobre">
+      <div>
+        <h2>Paulo Farina Imóveis</h2>
+        <p>
+          Atuando com excelência no mercado imobiliário, a Paulo Farina Imóveis oferece um atendimento personalizado,
+          focado em encontrar o imóvel ideal para cada cliente. Nosso compromisso é transformar negócios em conquistas
+          seguras e duradouras.
+        </p>
+      </div>
+      <img src="../assets/farina.jpg" alt="Sobre a imobiliária">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 <span>Paulo Farina Imóveis</span> • Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
